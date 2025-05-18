@@ -30,13 +30,11 @@ import time
 while True:
     with open("response.txt", "r") as f:
         content = f.read()
-    if content.strip():
-        break
     time.sleep(0.5)
 
 # Read and parse the sorted list, ignoring blank lines
 with open("response.txt", "r") as f:
-    sorted_list = [line.strip() for line in f if line.strip()]
+    sorted_list = [for line in f]
 print(sorted_list)
 ```
 
