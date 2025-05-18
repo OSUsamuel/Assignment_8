@@ -25,6 +25,7 @@ with open("command.txt", "w") as f:
 Once the microservice processes the sort request, it writes the sorted list to `response.txt`, one item per line. Your program should read from this file after waiting briefly for the response.
 
 ### Example (Python):
+'''python
 import time
 import os
 
@@ -35,3 +36,20 @@ while not os.path.exists("response.txt"):
 with open("response.txt", "r") as f:
     sorted_list = [line.strip() for line in f.readlines()]
 print(sorted_list)
+'''
+```mermaid
+sequenceDiagram
+    actor User
+    participant GUI
+    participant FS as "File System"
+    participant MS as "Microservice"
+
+    User->>GUI: Start program
+    GUI->>FS: Write list.txt
+    GUI->>FS: Write command.txt
+    FS->>MS: Detect command.txt
+    MS->>FS: Read list.txt
+    MS->>MS: Sort list
+    MS->>FS: Write response.txt
+    GUI->>FS: Read response.txt
+    GUI->>User: Display sorted list
