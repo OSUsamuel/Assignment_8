@@ -34,7 +34,7 @@ while True:
 
 # Read and parse the sorted list, ignoring blank lines
 with open("response.txt", "r") as f:
-    sorted_list = [for line in f]
+    sorted_list = [line for line in f]
 print(sorted_list)
 ```
 
