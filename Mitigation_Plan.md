@@ -15,7 +15,7 @@
      ```bash
      git clone https://github.com/your-username/sort-microservice.git
      cd sort-microservice
-     python sorter.py      # starts the file-monitoring service
+     python sorter.py    
      ```
    - **Dependencies:** Only Python 3.6+ (standard library).
 
