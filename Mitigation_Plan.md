@@ -10,7 +10,7 @@
    - N/A – all planned functionality (reading `list.txt`, waiting on `command.txt`, writing `response.txt`) is implemented and verified.
 
 4. **Access Instructions**  
-   - **GitHub Repository:** https://github.com/your-username/sort-microservice  
+   - **GitHub Repository:** https://github.com/OSUsamuel/sort_microservice
    - **Setup & Run:**  
      ```bash
      git clone https://github.com/your-username/sort-microservice.git
@@ -20,12 +20,12 @@
    - **Dependencies:** Only Python 3.6+ (standard library).
 
 5. **Fallback / Support**  
-   - **Contact:** Slack DM or email at `your.email@osu.edu`  
+   - **Contact:** Microsoft Teams text or email at `zinsam@oregonstate.edu`  
    - **Availability:** Monday–Friday, 9 AM–5 PM Pacific Time (UTC-7)  
    - I can help troubleshoot via screen-share or by sharing alternative file copies.
 
 6. **Notification Deadline**  
-   - If you cannot access or call the microservice, please inform me **by Wednesday, May 20, 2025 at 11:59 PM PST**.
+   - If you cannot access or call the microservice, please inform me **by Friday, May 22, 2025 at 11:59 PM PST**.
 
 7. **Additional Notes & Assumptions**  
    - Assumes Python 3.6+ installed and in PATH.  
