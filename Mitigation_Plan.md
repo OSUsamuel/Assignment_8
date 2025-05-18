@@ -15,8 +15,7 @@
      ```bash
      git clone https://github.com/your-username/sort-microservice.git
      cd sort-microservice
-     python microservice_sort.py      # starts the file-monitoring service
-     # (optional) python sort_gui.py   # launches the Tkinter GUI
+     python sorter.py      # starts the file-monitoring service
      ```
    - **Dependencies:** Only Python 3.6+ (standard library).
 
