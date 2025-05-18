@@ -12,9 +12,7 @@ To request data from the microservice, your program must:
 ### Example (Python):
 ```python
 with open("list.txt", "w") as f:
-    f.write("Banana\n
-Apple
-Carrot")
+    f.write("Banana\n", "apple\n" + "carrot\n")
 
 with open("command.txt", "w") as f:
     f.write("asc")  # or "desc"
