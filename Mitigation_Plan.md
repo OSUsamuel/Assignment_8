@@ -20,7 +20,7 @@
    - **Dependencies:** Only Python 3.6+ (standard library).
 
 5. **Fallback / Support**  
-   - **Contact:** Microsoft Teams text or email at `zinsam@oregonstate.edu`  
+   - **Contact:** Microsoft Teams text or email at `zinksam@oregonstate.edu`  
    - **Availability:** Monday–Friday, 9 AM–5 PM Pacific Time (UTC-7)  
    - I can help troubleshoot via screen-share or by sharing alternative file copies.
 
