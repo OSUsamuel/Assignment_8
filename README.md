@@ -10,11 +10,11 @@ To request data from the microservice, your program must:
 2. Write the desired sort order (`asc` or `desc`) to a file called `command.txt`.
 
 ### Example (Python):
-```python
-with open("list.txt", "w") as f:
+```python 
+with open("list.txt", "w") as f: # This is where you write the data 
     f.write("Banana\n", "apple\n" + "carrot\n")
 
-with open("command.txt", "w") as f:
+with open("command.txt", "w") as f: # you are in charge of updating this for the needs of your program
     f.write("asc")  # or "desc"
 ```
 
@@ -25,14 +25,18 @@ Once the microservice processes the sort request, it writes the sorted list to `
 ### Example (Python):
 ```python
 import time
-import os
 
-# Wait for the microservice to process the request
-while not os.path.exists("response.txt"):
+# Wait until response.txt contains actual data (non-empty)
+while True:
+    with open("response.txt", "r") as f:
+        content = f.read()
+    if content.strip():
+        break
     time.sleep(0.5)
 
+# Read and parse the sorted list, ignoring blank lines
 with open("response.txt", "r") as f:
-    sorted_list = [line.strip() for line in f.readlines()]
+    sorted_list = [line.strip() for line in f if line.strip()]
 print(sorted_list)
 ```
 
@@ -54,3 +58,10 @@ sequenceDiagram
     GUI->>FS: Read response.txt
     GUI->>User: Display sorted list
 ```
+
+## Notes
+- The microservice continuously monitors `command.txt` for changes.
+- You are responsible for generating `list.txt` and `command.txt` from your own code.
+- The result appears in `response.txt`. Make sure to wait or check before reading it.
+
+If you have questions, contact the developer before changing anything about the communication format.
