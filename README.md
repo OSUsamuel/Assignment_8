@@ -38,6 +38,7 @@ with open("response.txt", "r") as f:
 print(sorted_list)
 ```
 
+## UML Sequence Diagram: Request & Response Flow
 ```mermaid
 sequenceDiagram
     actor User
